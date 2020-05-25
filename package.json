@@ -1,0 +1,39 @@
+{
+  "name": "stylelint-config-gds",
+  "version": "0.1.0",
+  "description": "[WIP] Stylelint configuration for Government Digital Service style rules",
+  "main": "scss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphagov/stylelint-config-gds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alphagov/stylelint-config-gds/issues"
+  },
+  "homepage": "https://github.com/alphagov/stylelint-config-gds#readme",
+  "keywords": [
+    "govuk",
+    "gds",
+    "stylelint",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": {
+    "name": "GOV.UK Dev",
+    "email": "govuk-dev@digital.cabinet-office.gov.uk"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4",
+    "stylelint": "^13.5.0"
+  }
+}
