@@ -4,7 +4,8 @@
   "description": "[WIP] Stylelint configuration for Government Digital Service style rules",
   "main": "scss.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run lint",
+    "test": "jest",
     "lint": "standard"
   },
   "repository": {
@@ -33,6 +34,7 @@
     "stylelint-scss": "^3.17.2"
   },
   "devDependencies": {
+    "jest": "^26.0.1",
     "standard": "^14.3.4",
     "stylelint": "^13.5.0"
   }
