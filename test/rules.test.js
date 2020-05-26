@@ -3,7 +3,7 @@
 var cssRules = require('../css')
 var scssRules = require('../scss')
 var stylelint = require('stylelint')
-var goodCss = '.class-name { content: ""; }\n'
+var goodCss = '.class-name {\n  content: "";\n}\n'
 var noErrors = expect.objectContaining({
   errored: false,
   results: expect.arrayContaining([
