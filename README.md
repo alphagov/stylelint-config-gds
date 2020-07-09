@@ -19,7 +19,7 @@ common at GDS) however the CSS rules can be used alone.
 To add this to your project, install stylelint and this module:
 
 ```bash
-npm install --save-dev stylelint
+npm install --save-dev stylelint stylelint-scss
 npm install --save-dev git://github.com/alphagov/stylelint-config-gds.git
 ```
 
