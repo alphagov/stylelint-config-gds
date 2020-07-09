@@ -3,23 +3,19 @@
 module.exports = {
   extends: 'stylelint-config-standard',
   rules: {
-    // We don't tend to set consisten new line practices around @rules
+    // This rule is disabled because our house style has a lot of at-rules
+    // via SCSS where new lines are used indiscriminately for readability.
     // https://stylelint.io/user-guide/rules/at-rule-empty-line-before
     'at-rule-empty-line-before': null,
-    // Always require a space before a brace
-    // https://stylelint.io/user-guide/rules/block-opening-brace-space-before
-    'block-opening-brace-space-before': 'always',
     // Always require a newline after a closing brace of a rule
-    // https://stylelint.io/user-guide/rules/block-opening-brace-newline-after
+    // https://stylelint.io/user-guide/rules/block-closing-brace-newline-after
+    // Originates from: https://github.com/kristerkari/stylelint-scss/blob/f54d9861e35891312bda98afe2404a993a4262e0/docs/examples/if-else.md
     'block-closing-brace-newline-after': [
       'always', {
-        // Exceptions for conditionals, particularly useful for SASS.
+        // Exceptions for conditionals, particularly useful for SCSS.
         ignoreAtRules: ['if', 'else']
       }
     ],
-    // Always have a new line character before a closing brace
-    // https://stylelint.io/user-guide/rules/block-closing-brace-newline-before
-    'block-closing-brace-newline-before': 'always',
     // Disallow using CSS named colours
     // https://stylelint.io/user-guide/rules/color-named
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L149
