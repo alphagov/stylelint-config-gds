@@ -58,6 +58,13 @@ module.exports = {
         ignore: ['blockless-at-rules', 'pseudo-classes']
       }
     ],
+    // This rules attempts to prevent defining defining rules with a more
+    // specific selector than a previous one, where they may override. This
+    // is disables as it conflicts with our common usage of nesting rules
+    // within a BEM modifier where a selector may be more or less specific
+    // than a previous rule.
+    // https://stylelint.io/user-guide/rules/no-descending-specificity
+    'no-descending-specificity': null,
     // Disallow prefixing decimals with a 0
     // https://stylelint.io/user-guide/rules/number-leading-zero
     // Orginates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L218
