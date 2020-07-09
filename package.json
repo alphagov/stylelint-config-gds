@@ -37,5 +37,8 @@
     "jest": "^26.1.0",
     "standard": "^14.3.4",
     "stylelint": "^13.6.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.0.0"
   }
 }
