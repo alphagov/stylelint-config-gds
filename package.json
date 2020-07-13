@@ -1,13 +1,14 @@
 {
   "name": "stylelint-config-gds",
-  "version": "0.1.0",
-  "description": "[WIP] Stylelint configuration for Government Digital Service style rules",
+  "version": "0.1.0-pre.1",
+  "description": "A work-in-progress Stylelint configuration for the UK Government Digital Service.",
   "main": "scss.js",
   "scripts": {
     "pretest": "npm run lint",
     "test": "jest",
     "lint": "standard"
   },
+  "files": ["scss.js", "css.js"],
   "repository": {
     "type": "git",
     "url": "https://github.com/alphagov/stylelint-config-gds.git"
