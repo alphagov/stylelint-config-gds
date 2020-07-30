@@ -19,7 +19,7 @@ common at GDS) however the CSS rules can be used alone.
 To add this to your project, install stylelint and this module:
 
 ```bash
-npm install --save-dev stylelint styelint-config-gds@0.1.0-pre.2
+npm install --save-dev stylelint stylelint-config-gds@0.1.0-pre.2
 ```
 
 You then need to [configure](https://stylelint.io/user-guide/configure)
