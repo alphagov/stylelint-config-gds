@@ -31,6 +31,9 @@ module.exports = {
     // It's common for us to break up groups of CSS with an empty line
     // https://stylelint.io/user-guide/rules/declaration-empty-line-before
     'declaration-empty-line-before': null,
+    // Disallow !important within declarations
+    // https://stylelint.io/user-guide/rules/declaration-no-important
+    'declaration-no-important': true,
     // Properties and values that are disallowed
     // https://stylelint.io/user-guide/rules/declaration-property-value-blacklist
     'declaration-property-value-blacklist': {
