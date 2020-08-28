@@ -1,7 +1,5 @@
 # GDS Stylelint Config
 
-⚠ This is a work in progress and not ready to be used in projects ⚠️
-
 This provides a [stylelint](https://stylelint.io/) configuration for linting
 SCSS and CSS files as per the conventions of the [Government Digital Service
 (GDS)](https://www.gov.uk/government/organisations/government-digital-service).
@@ -40,7 +38,7 @@ common at GDS) however the CSS rules can be used alone.
 To add this to your project, install stylelint and this module:
 
 ```bash
-npm install --save-dev stylelint stylelint-config-gds@0.1.0-pre.3
+npm install --save-dev stylelint stylelint-config-gds
 ```
 
 You then need to [configure](https://stylelint.io/user-guide/configure)
