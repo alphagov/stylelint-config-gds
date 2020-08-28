@@ -11,6 +11,27 @@ over the years.
 
 [stylelint-config-standard]: https://github.com/stylelint/stylelint-config-standard
 
+## Project goals
+
+This project was developed with a number of goals in mind, these should be
+considered whenever proposals are made to add to or amend the rules.
+
+1. Lean on community standards over defining our own rules as much as possible -
+   it's not a good use of our time to debate preferences so let's follow [common
+   community guidelines][stylelint-config-standard] unless we have a compelling
+   reason not to do so.
+1. Be consistent with [GOV.UK Design System][] patterns and conventions, most
+   of the initial rules of this project were defined to maintain consistency.
+1. Reflect modern CSS practices over providing compatibility for legacy
+   projects, if it is unfeasible for legacy projects to adopt all these rules
+   they are encouraged to disable problematic rules in their project
+   configuration.
+1. Support CSS and SCSS equally.
+1. Be sufficiently agreeable that these rules can be used, or aspired to,
+   across all GDS programmes.
+
+[GOV.UK Design System]: https://design-system.service.gov.uk/
+
 ## Usage
 
 These rules are expected to be mostly used for SCSS projects (as these are more
