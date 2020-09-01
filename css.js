@@ -35,8 +35,8 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/declaration-no-important
     'declaration-no-important': true,
     // Properties and values that are disallowed
-    // https://stylelint.io/user-guide/rules/declaration-property-value-blacklist
-    'declaration-property-value-blacklist': {
+    // https://stylelint.io/user-guide/rules/declaration-property-value-disallowed-list
+    'declaration-property-value-disallowed-list': {
       // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L222
       '/transition/': ['/all/']
     },
@@ -49,9 +49,9 @@ module.exports = {
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L430
     'function-url-quotes': 'always',
     // Disallow absolute URLs with scheme other than data, assets should be local
-    // https://stylelint.io/user-guide/rules/function-url-scheme-whitelist
+    // https://stylelint.io/user-guide/rules/function-url-scheme-allowed-list
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L230
-    'function-url-scheme-whitelist': ['data'],
+    'function-url-scheme-allowed-list': ['data'],
     // Disallow deep nesting, ideally only exceptions (such as .js-enabled) should
     // have nesting
     // https://stylelint.io/user-guide/rules/max-nesting-depth

@@ -5,9 +5,9 @@ module.exports = {
   extends: './css',
   rules: {
     // Disallow @debug
-    // https://stylelint.io/user-guide/rules/at-rule-blacklist
+    // https://stylelint.io/user-guide/rules/at-rule-disallowed-list
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L166
-    'at-rule-blacklist': ['debug'],
+    'at-rule-disallowed-list': ['debug'],
     // This is disabled for SCSS as it prevents SCSS specific @ rules (such as @if)
     // https://stylelint.io/user-guide/rules/at-rule-no-unknown
     'at-rule-no-unknown': null,

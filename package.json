@@ -54,9 +54,9 @@
     "jest": "^26.1.0",
     "release-it": "^13.6.8",
     "standard": "^14.3.4",
-    "stylelint": "^13.6.1"
+    "stylelint": "^13.7.0"
   },
   "peerDependencies": {
-    "stylelint": "^13.0.0"
+    "stylelint": "^13.7.0"
   }
 }
