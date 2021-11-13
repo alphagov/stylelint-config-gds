@@ -7,13 +7,6 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/at-rule-disallowed-list
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L166
     'at-rule-disallowed-list': ['debug'],
-    // This is disabled for SCSS as it prevents SCSS specific @ rules (such as @if)
-    // https://stylelint.io/user-guide/rules/at-rule-no-unknown
-    'at-rule-no-unknown': null,
-    // Only allow @extend with a placeholder
-    // https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L242
-    'scss/at-extend-no-missing-placeholder': true,
     // https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/at-function-pattern
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L88
     'scss/at-function-pattern': [
@@ -22,14 +15,6 @@ module.exports = {
           'may start with an underscore'
       }
     ],
-    // Disallow importing partials with a underscore prefix
-    // https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/at-import-no-partial-leading-underscore
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L46
-    'scss/at-import-no-partial-leading-underscore': true,
-    // Disallow importing partials with a underscore prefix
-    // https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/at-import-partial-extension
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L45
-    'scss/at-import-partial-extension': 'never',
     // https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/at-mixin-pattern
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L125
     'scss/at-mixin-pattern': [
@@ -38,9 +23,6 @@ module.exports = {
           'may start with an underscore'
       }
     ],
-    // This lints that only @ rules known to SCSS are allowed
-    // https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/at-rule-no-unknown
-    'scss/at-rule-no-unknown': true,
     // Disable CSS style comments in SCSS
     // https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/comment-no-loud
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L162
@@ -53,10 +35,6 @@ module.exports = {
           'may start with an underscore'
       }
     ],
-    // Require spaces around operators
-    // https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/operator-no-unspaced
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L467
-    'scss/operator-no-unspaced': true,
     // https://github.com/kristerkari/stylelint-scss/blob/master/src/rules/percent-placeholder-pattern
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L246
     'scss/percent-placeholder-pattern': [
