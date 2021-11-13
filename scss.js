@@ -1,8 +1,7 @@
 'use strict'
 
 module.exports = {
-  plugins: ['stylelint-scss'],
-  extends: './css',
+  extends: ['stylelint-config-standard-scss', './css'],
   rules: {
     // Disallow @debug
     // https://stylelint.io/user-guide/rules/at-rule-disallowed-list
