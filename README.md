@@ -46,18 +46,18 @@ Stylelint.
 
 To lint SCSS you can add the following property to your package.json:
 
-```
-  "stylelint": {
-    "extends": "stylelint-config-gds/scss"
-  }
+```json
+"stylelint": {
+  "extends": "stylelint-config-gds/scss"
+}
 ```
 
 To lint CSS add the following:
 
-```
-  "stylelint": {
-    "extends": "stylelint-config-gds/css"
-  }
+```json
+"stylelint": {
+  "extends": "stylelint-config-gds/css"
+}
 ```
 
 You should then be able to run a lint with
