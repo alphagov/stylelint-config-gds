@@ -1,6 +1,6 @@
 # GDS Stylelint Config
 
-This provides a [stylelint](https://stylelint.io/) configuration for linting
+This provides a [Stylelint](https://stylelint.io/) configuration for linting
 SCSS and CSS files as per the conventions of the [Government Digital Service
 (GDS)](https://www.gov.uk/government/organisations/government-digital-service).
 
@@ -35,29 +35,29 @@ considered whenever proposals are made to add to or amend the rules.
 These rules are expected to be mostly used for SCSS projects (as these are more
 common at GDS) however the CSS rules can be used alone.
 
-To add this to your project, install stylelint and this module:
+To add this to your project, install Stylelint and this module:
 
 ```bash
 npm install --save-dev stylelint stylelint-config-gds
 ```
 
 You then need to [configure](https://stylelint.io/user-guide/configure)
-stylelint.
+Stylelint.
 
 To lint SCSS you can add the following property to your package.json:
 
-```
-  "stylelint": {
-    "extends": "stylelint-config-gds/scss"
-  }
+```json
+"stylelint": {
+  "extends": "stylelint-config-gds/scss"
+}
 ```
 
 To lint CSS add the following:
 
-```
-  "stylelint": {
-    "extends": "stylelint-config-gds/css"
-  }
+```json
+"stylelint": {
+  "extends": "stylelint-config-gds/css"
+}
 ```
 
 You should then be able to run a lint with

@@ -70,13 +70,13 @@ module.exports = {
     'no-descending-specificity': null,
     // Disallow prefixing decimals with a 0
     // https://stylelint.io/user-guide/rules/number-leading-zero
-    // Orginates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L119
+    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L119
     'number-leading-zero': 'never',
     // Require all class selectors to be in a hyphenated BEM format
     // https://stylelint.io/user-guide/rules/selector-class-pattern
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L39
     'selector-class-pattern': [
-      // a loose interpretation on hyphenathed BEM in order to allow BEM
+      // a loose interpretation on hyphenated BEM in order to allow BEM
       // style and govuk-! overrides
       /^[a-z]([a-z0-9-_!])*$/, {
         resolveNestedSelectors: true,
