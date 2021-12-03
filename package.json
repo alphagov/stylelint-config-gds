@@ -53,9 +53,9 @@
   "devDependencies": {
     "jest": "^27.4.3",
     "standard": "^16.0.4",
-    "stylelint": "^13.13.0"
+    "stylelint": "^14.6.1"
   },
   "peerDependencies": {
-    "stylelint": "^13.13.0"
+    "stylelint": "^14.4.0"
   }
 }
