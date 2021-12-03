@@ -84,6 +84,10 @@ module.exports = {
       /^[a-z0-9-]*$/, {
         message: 'Placeholders may only contain [a-z0-9-] characters'
       }
-    ]
+    ],
+    // Disable @import needing to be first declarations
+    // @import has a different usage in SCSS to CSS and may be scoped or follow SCSS conditionals
+    // https://stylelint.io/user-guide/rules/list/no-invalid-position-at-import-rule/
+    'no-invalid-position-at-import-rule': null
   }
 }
