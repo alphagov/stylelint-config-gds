@@ -22,7 +22,9 @@
     "increment": false
   },
   "files": [
+    "scss-rules.js",
     "scss.js",
+    "css-rules.js",
     "css.js"
   ],
   "repository": {
