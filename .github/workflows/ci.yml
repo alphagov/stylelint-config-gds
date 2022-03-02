@@ -10,3 +10,34 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          registry-url: 'https://registry.npmjs.org'
+      - name: Establish version
+        run: |
+          LOCAL=$(node -p "require('./package.json').version")
+          echo "::set-output name=local::${LOCAL}"
+          echo "::set-output name=remote::$(npm view stylelint-config-gds version)"
+          if git ls-remote --tags --exit-code origin ${LOCAL}; then
+            echo "::set-output name=tagged::yes"
+          fi
+        id: version
+      - name: Tag version
+        if: ${{ steps.version.outputs.tagged != 'yes' }}
+        run: git tag ${{ steps.version.outputs.local }} && git push --tags
+      - name: Release to NPM
+        if: ${{ steps.version.outputs.local != steps.version.outputs.remote }}
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.ALPHAGOV_NPM_AUTOMATION_TOKEN }}
