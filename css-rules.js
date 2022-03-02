@@ -6,10 +6,18 @@
 // There should be no SCSS rules applied here
 module.exports = {
   rules: {
+    // GDS predominantly uses a conventional to specify opacity values with
+    // decimals
+    // https://stylelint.io/user-guide/rules/list/alpha-value-notation/
+    'alpha-value-notation': 'number',
     // This rule is disabled because our house style has a lot of at-rules
     // via SCSS where new lines are used indiscriminately for readability.
     // https://stylelint.io/user-guide/rules/at-rule-empty-line-before
     'at-rule-empty-line-before': null,
+    // This rule expects autoprefixer to be used but we don't consistently use
+    // that tool across GDS products.
+    // https://stylelint.io/user-guide/rules/list/at-rule-no-vendor-prefix/
+    'at-rule-no-vendor-prefix': null,
     // Always require a newline after a closing brace of a rule
     // https://stylelint.io/user-guide/rules/block-closing-brace-newline-after
     // Originates from: https://github.com/kristerkari/stylelint-scss/blob/f54d9861e35891312bda98afe2404a993a4262e0/docs/examples/if-else.md
@@ -19,6 +27,11 @@ module.exports = {
         ignoreAtRules: ['if', 'else']
       }
     ],
+    // Require commas to separate numbers in colour functions, this is
+    // required for Internet Explorer support which doesn't understand the
+    // modern syntax.
+    // https://stylelint.io/user-guide/rules/list/color-function-notation/
+    'color-function-notation': 'legacy',
     // Disallow using CSS named colours
     // https://stylelint.io/user-guide/rules/color-named
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L149
@@ -55,6 +68,11 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/function-url-scheme-allowed-list
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L230
     'function-url-scheme-allowed-list': ['data'],
+    // Traditionally GDS linters haven't had line length rules, which means
+    // this would be inconsistent with JS linting and have a lot of churn
+    // to apply
+    // https://stylelint.io/user-guide/rules/list/max-line-length/
+    'max-line-length': null,
     // Disallow deep nesting, ideally only exceptions (such as .js-enabled) should
     // have nesting
     // https://stylelint.io/user-guide/rules/max-nesting-depth
@@ -64,6 +82,10 @@ module.exports = {
         ignore: ['blockless-at-rules', 'pseudo-classes']
       }
     ],
+    // This rule expects autoprefixer to be used but we don't consistently use
+    // that tool across GDS products.
+    // https://stylelint.io/user-guide/rules/list/media-feature-name-no-vendor-prefix/
+    'media-feature-name-no-vendor-prefix': null,
     // This rules attempts to prevent defining defining rules with a more
     // specific selector than a previous one, where they may override. This
     // is disables as it conflicts with our common usage of nesting rules
@@ -75,6 +97,10 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/number-leading-zero
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L119
     'number-leading-zero': 'never',
+    // This rule expects autoprefixer to be used but we don't consistently use
+    // that tool across GDS products.
+    // https://stylelint.io/user-guide/rules/list/property-no-vendor-prefix/
+    'property-no-vendor-prefix': null,
     // Require all class selectors to be in a hyphenated BEM format
     // https://stylelint.io/user-guide/rules/selector-class-pattern
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L39
@@ -110,6 +136,10 @@ module.exports = {
         ignore: ['attribute']
       }
     ],
+    // This rule expects autoprefixer to be used but we don't consistently use
+    // that tool across GDS products.
+    // https://stylelint.io/user-guide/rules/list/selector-no-vendor-prefix/
+    'selector-no-vendor-prefix': null,
     // Require single colons for defining pseudo-elements
     // IE8 and below do not support the modern double colon approach. Although
     // few projects support IE8, we'd prefer to not exclude compatibility for
@@ -119,6 +149,10 @@ module.exports = {
     // Disallow redundant properties in rules (for example: margin: 1px 1px 1px;)
     // https://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L436
-    'shorthand-property-no-redundant-values': true
+    'shorthand-property-no-redundant-values': true,
+    // This rule expects autoprefixer to be used but we don't consistently use
+    // that tool across GDS products.
+    // https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
+    'value-no-vendor-prefix': null
   }
 }
