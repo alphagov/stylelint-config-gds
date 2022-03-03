@@ -52,7 +52,6 @@
   },
   "devDependencies": {
     "jest": "^27.4.3",
-    "release-it": "^14.11.8",
     "standard": "^16.0.4",
     "stylelint": "^13.13.0"
   },

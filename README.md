@@ -72,39 +72,14 @@ You can lint the JS and run tests with `npm test`
 
 ## Releasing
 
-To release a new version of this module you will need credentials to the
-[alphagov npm account][] (for GOV.UK developers this can be accessed via
-the 2nd line password store [govuk-secrets][]) and you will also need to
-have a [GitHub personal access token][github-pat] which has repo access.
+GitHub Actions is used to release new versions of this module when a PR
+is merged into the main branch and there is a new version number.
 
-Once you have established access to the credentials the next step is to
-decide the next [semantic version number](https://semver.org/) and apply this
-to [package.json][], [package-lock.json][] and [README.md][]. These changes
-should then be raised as a pull request on GitHub.
-
-Once your pull request has been reviewed and merged you can perform the actual
-release via your terminal. This is done with by using the [release-it][]
-module and this process will create a tag on GitHub, push a release to GitHub
-and publish a release to npm.
-
-1. Ensure you're in the working directory of the repo and on the `main` branch
-   which is up-to-date with upstream.
-1. Run `npm login` and enter your npm credentials to authenticate with npm.
-1. Set your GitHub personal access token to a `GITHUB_TOKEN` environment
-   variable, for example `export GITHUB_TOKEN=my-token`.
-1. Test that the release does what you expect it is going to do by performing
-   a dry run of the release with `npm run release-dry-run`.
-1. Once you're happy with the dry-run run the release for real by running
-   `npm run release`, you should answer yes to every step otherwise it will
-   only be a partial release.
-
-[alphagov npm account]: https://www.npmjs.com/~alphagov
-[govuk-secrets]: https://github.com/alphagov/govuk-secrets
-[github-pat]: https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
-[package.json]: https://github.com/alphagov/stylelint-config-gds/blob/main/package.json
-[package-lock.json]: https://github.com/alphagov/stylelint-config-gds/blob/main/package-lock.json
-[README.md]: https://github.com/alphagov/stylelint-config-gds/blob/main/README.md
-[release-it]: https://github.com/release-it/release-it
+To create a new release you should amend `package.json` to have the new
+version number (based on [semvar](https://semver.org/)) and run `npm install`
+to update `package-lock.json`. You should then update the
+[CHANGELOG.md](./CHANGELOG.md). Finally, open a PR - once this is merged
+the change will be released.
 
 ## Licence
 
