@@ -40,6 +40,13 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/color-hex-length
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/master/docs/contributing/coding-standards/css.md#colours-defined-as-variables-should-be-in-lowercase-and-in-full-length
     'color-hex-length': 'long',
+    // Requires that if all longhand properties are used then shorthand must be
+    // used (i.e. if all margin-top, margin-right, margin-bottom, margin-left
+    // are used you must use margin).
+    // https://stylelint.io/user-guide/rules/list/declaration-block-no-redundant-longhand-properties/
+    // This is disabled due to concerns that
+    // it produces less readable code (see: https://github.com/alphagov/govuk-frontend/pull/2567)
+    'declaration-block-no-redundant-longhand-properties': null,
     // Require all rules to be multiline
     // https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L32
