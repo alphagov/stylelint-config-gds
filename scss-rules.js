@@ -8,7 +8,7 @@
 module.exports = {
   rules: {
     // Disallow @debug
-    // https://stylelint.io/user-guide/rules/at-rule-disallowed-list
+    // https://stylelint.io/user-guide/rules/list/at-rule-disallowed-list/
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L166
     'at-rule-disallowed-list': ['debug'],
     // https://github.com/stylelint-scss/stylelint-scss/tree/master/src/rules/at-function-pattern
