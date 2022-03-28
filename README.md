@@ -65,8 +65,8 @@ You should then be able to run a lint with
 
 ## Development
 
-Make changes to rules that affect both CSS and SCSS in `./css.js`, for rules
-that only apply to SCSS add them to `./scss.js`.
+Make changes to rules that affect both CSS and SCSS in `./css-rules.js`, for
+rules that only apply to SCSS add them to `./scss-rules.js`.
 
 You can lint the JS and run tests with `npm test`
 
