@@ -7,6 +7,20 @@
 // ones that apply to CSS syntax)
 module.exports = {
   rules: {
+    // Allow Sass flags like !default and !global
+    // https://stylelint.io/user-guide/rules/annotation-no-unknown/
+    'annotation-no-unknown': [
+      true, {
+        ignoreAnnotations: [
+          'default',
+          'global',
+
+          // Allow conditional !important
+          // if($important, !important, null)
+          'important'
+        ]
+      }
+    ],
     // Disallow @debug
     // https://stylelint.io/user-guide/rules/list/at-rule-disallowed-list/
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L166
