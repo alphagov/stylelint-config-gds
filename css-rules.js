@@ -18,15 +18,6 @@ module.exports = {
     // that tool across GDS products.
     // https://stylelint.io/user-guide/rules/list/at-rule-no-vendor-prefix/
     'at-rule-no-vendor-prefix': null,
-    // Always require a newline after a closing brace of a rule
-    // https://stylelint.io/user-guide/rules/list/block-closing-brace-newline-after/
-    // Originates from: https://github.com/kristerkari/stylelint-scss/blob/f54d9861e35891312bda98afe2404a993a4262e0/docs/examples/if-else.md
-    'block-closing-brace-newline-after': [
-      'always', {
-        // Exceptions for conditionals, particularly useful for SCSS.
-        ignoreAtRules: ['if', 'else']
-      }
-    ],
     // Require commas to separate numbers in colour functions, this is
     // required for Internet Explorer support which doesn't understand the
     // modern syntax.
@@ -100,10 +91,6 @@ module.exports = {
     // than a previous rule.
     // https://stylelint.io/user-guide/rules/list/no-descending-specificity/
     'no-descending-specificity': null,
-    // Disallow prefixing decimals with a 0
-    // https://stylelint.io/user-guide/rules/list/number-leading-zero/
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L119
-    'number-leading-zero': 'never',
     // This rule expects autoprefixer to be used but we don't consistently use
     // that tool across GDS products.
     // https://stylelint.io/user-guide/rules/list/property-no-vendor-prefix/
