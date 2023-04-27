@@ -1,0 +1,16 @@
+version: 2
+
+updates:
+  # Update npm packages
+  - package-ecosystem: npm
+    directory: /
+
+    # Bump package.json versions too
+    # in addition to security updates
+    allow:
+      - dependency-type: direct
+    versioning-strategy: increase
+
+  # Update GitHub Actions
+  - package-ecosystem: github-actions
+    directory: /
