@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-gds",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Stylelint configuration for the UK Government Digital Service.",
   "main": "scss.js",
   "scripts": {
@@ -49,15 +49,15 @@
   },
   "license": "MIT",
   "dependencies": {
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-config-standard-scss": "^3.0.0"
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^6.1.0"
   },
   "devDependencies": {
     "jest": "^27.4.3",
     "standard": "^16.0.4",
-    "stylelint": "^14.6.1"
+    "stylelint": "^14.16.1"
   },
   "peerDependencies": {
-    "stylelint": "^14.4.0"
+    "stylelint": "^14.14.0"
   }
 }

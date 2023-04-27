@@ -147,6 +147,10 @@ module.exports = {
     // that tool across GDS products.
     // https://stylelint.io/user-guide/rules/list/selector-no-vendor-prefix/
     'selector-no-vendor-prefix': null,
+    // Disallow complex `:not()` notation (CSS Selectors Level 4) for backwards
+    // compatibility in older browsers
+    // https://stylelint.io/user-guide/rules/selector-not-notation/
+    'selector-not-notation': 'simple',
     // Require single colons for defining pseudo-elements
     // IE8 and below do not support the modern double colon approach. Although
     // few projects support IE8, we'd prefer to not exclude compatibility for
