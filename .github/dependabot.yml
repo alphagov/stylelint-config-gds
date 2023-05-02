@@ -4,6 +4,8 @@ updates:
   # Update npm packages
   - package-ecosystem: npm
     directory: /
+    schedule:
+      interval: daily
 
     # Bump package.json versions too
     # in addition to security updates
@@ -14,3 +16,5 @@ updates:
   # Update GitHub Actions
   - package-ecosystem: github-actions
     directory: /
+    schedule:
+      interval: daily
