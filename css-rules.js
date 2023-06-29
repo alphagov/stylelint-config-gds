@@ -151,12 +151,6 @@ module.exports = {
     // compatibility in older browsers
     // https://stylelint.io/user-guide/rules/selector-not-notation/
     'selector-not-notation': 'simple',
-    // Require single colons for defining pseudo-elements
-    // IE8 and below do not support the modern double colon approach. Although
-    // few projects support IE8, we'd prefer to not exclude compatibility for
-    // purely syntactic reasons.
-    // https://stylelint.io/user-guide/rules/list/selector-pseudo-element-colon-notation/
-    'selector-pseudo-element-colon-notation': 'single',
     // Disallow redundant properties in rules (for example: margin: 1px 1px 1px;)
     // https://stylelint.io/user-guide/rules/list/shorthand-property-no-redundant-values/
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L436
