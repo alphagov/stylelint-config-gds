@@ -6,7 +6,7 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
-## Unreleased
+## 1.0.0
 
 This release upgrades to Stylelint 15 and now includes:
 

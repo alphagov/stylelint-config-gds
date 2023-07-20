@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-gds",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A Stylelint configuration for the UK Government Digital Service.",
   "main": "scss.js",
   "scripts": {
