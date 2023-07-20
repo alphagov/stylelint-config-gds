@@ -6,6 +6,16 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## Unreleased
+
+### Removal of rule enforcing single-colon pseudo elements
+
+We removed the rule [`selector-pseudo-element-colon-notation`](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation/) preventing double-colon `::before` and `::after` pseudo elements.
+
+Internet Explorer 8, 9 and 10 require single-colon `:before` and `:after` pseudo elements, but supporting these old browsers has not been a requirement for services since June 2018. If you wish to keep support you can [configure your Stylelint](https://stylelint.io/user-guide/configure/) to re-enable it.
+
+This change was made in [pull request #36: Remove `selector-pseudo-element-colon-notation`](https://github.com/alphagov/stylelint-config-gds/pull/36).
+
 ## 0.3.0
 
 This release updates all bundled configs to the maximum version supported by Stylelint 14. This work is in preparation for [Stylelint 15 deprecating all stylistic rules](https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules) with a recommendation to use Prettier for formatting.
