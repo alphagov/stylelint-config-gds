@@ -8,6 +8,16 @@
 
 ## Unreleased
 
+### Breaking change: Removal of stylistic rules
+
+We have removed all stylistic rules (such as tabs/spaces, indentation, etc) as they're no longer included in Stylelint common configurations as part of their [deprecation in Stylelint 15]((https://stylelint.io/migration-guide/to-15/#deprecated-stylistic-rules)).
+
+As per Stylelint's own documentation, we recommend that projects adopt [Prettier](https://prettier.io/) for formatting instead.
+
+If this is not possible for your project, you can [configure](https://stylelint.io/user-guide/configure/) your projects' Stylelint configuration to use the [`stylelint-stylistic`](https://github.com/elirasza/stylelint-stylistic) or [`stylelint-codeguide`](https://github.com/firefoxic/stylelint-codeguide) plugins to restore the deprecated rules instead.
+
+This change was made in [pull request #44: Remove deprecated stylistic rules](https://github.com/alphagov/stylelint-config-gds/pull/44).
+
 ### Removal of rule enforcing single-colon pseudo elements
 
 We removed the rule [`selector-pseudo-element-colon-notation`](https://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation/) preventing double-colon `::before` and `::after` pseudo elements.
