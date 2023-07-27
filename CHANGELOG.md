@@ -6,7 +6,15 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
-## Unreleased
+## 1.0.0
+
+This release upgrades to Stylelint 15 and now includes:
+
+* Checks for media query syntax, rules and values
+* Checks for number precision inside CSS functions
+* Fixes for duplicate rules with intentionally different units
+
+Read about breaking changes in the Stylelint [**Migrating to v15.0.0**](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-15.md#breaking-changes) guide.
 
 ### Breaking change: Removal of stylistic rules
 
