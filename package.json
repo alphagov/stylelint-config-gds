@@ -50,7 +50,7 @@
   "license": "MIT",
   "dependencies": {
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-config-standard-scss": "^10.0.0"
+    "stylelint-config-standard-scss": "^11.0.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
