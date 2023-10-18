@@ -6,7 +6,7 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
-## Unreleased
+## 1.1.0
 
 This release includes:
 
