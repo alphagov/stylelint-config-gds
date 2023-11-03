@@ -6,6 +6,13 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## Unreleased
+
+This release includes:
+
+* [pull request #53: Update Stylelint minimum version to `stylelint@15.11.0`](https://github.com/alphagov/stylelint-config-gds/pull/53)
+* [pull request #57: Update bundled Sass config to `stylelint-config-standard-scss@11.1.0`](https://github.com/alphagov/stylelint-config-gds/pull/57)
+
 ## 1.0.0
 
 This release upgrades to Stylelint 15 and now includes:
