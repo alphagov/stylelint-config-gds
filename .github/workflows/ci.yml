@@ -35,10 +35,10 @@ jobs:
       - name: Establish version
         run: |
           LOCAL=$(node -p "require('./package.json').version")
-          echo "::set-output name=local::${LOCAL}"
-          echo "::set-output name=remote::$(npm view stylelint-config-gds version)"
+          echo "local=${LOCAL}" >> $GITHUB_OUTPUT
+          echo "remote=$(npm view stylelint-config-gds version)" >> $GITHUB_OUTPUT
           if git ls-remote --tags --exit-code origin ${LOCAL}; then
-            echo "::set-output name=tagged::yes"
+            echo "tagged=yes" >> $GITHUB_OUTPUT
           fi
         id: version
       - name: Tag version
