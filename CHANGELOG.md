@@ -6,6 +6,10 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## Unreleased
+
+* [pull request #59: Fix rule `media-feature-range-notation` to use `'prefix'` notation](https://github.com/alphagov/stylelint-config-gds/pull/59)
+
 ## 1.1.0
 
 This release includes:

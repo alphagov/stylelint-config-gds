@@ -84,6 +84,11 @@ module.exports = {
     // that tool across GDS products.
     // https://stylelint.io/user-guide/rules/media-feature-name-no-vendor-prefix/
     'media-feature-name-no-vendor-prefix': null,
+    // Require media query feature ranges to use prefix notation, this is
+    // required for Internet Explorer support which doesn't understand the
+    // modern syntax.
+    // https://stylelint.io/user-guide/rules/media-feature-range-notation/
+    'media-feature-range-notation': 'prefix',
     // This rules attempts to prevent defining defining rules with a more
     // specific selector than a previous one, where they may override. This
     // is disables as it conflicts with our common usage of nesting rules
