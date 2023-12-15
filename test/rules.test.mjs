@@ -1,8 +1,9 @@
 /* eslint-env jest */
 
-const cssRules = require('../css')
-const scssRules = require('../scss')
-const stylelint = require('stylelint')
+import stylelint from 'stylelint'
+import cssRules from '../css.js'
+import scssRules from '../scss.js'
+
 const goodCss = '.class-name {\n  content: "";\n}\n'
 const noErrors = expect.objectContaining({
   errored: false,
