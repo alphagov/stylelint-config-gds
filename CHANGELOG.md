@@ -6,7 +6,7 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
-## Unreleased
+## 2.0.0
 
 This release upgrades to Stylelint 16 and [removes rules deprecated in Stylelint 15](#breaking-change-removal-of-stylistic-rules)
 
