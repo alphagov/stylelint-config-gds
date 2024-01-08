@@ -6,6 +6,21 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## Unreleased
+
+This release upgrades to Stylelint 16 and [removes rules deprecated in Stylelint 15](#breaking-change-removal-of-stylistic-rules)
+
+### Breaking change: Requires Node.js v18.12.0+
+
+The minimum Node.js version is now v18.12.0 but note the following changes for Stylelint API users:
+
+* Supports ES module plugins, custom syntaxes and formatters
+* Updates rules, formatters and utilities to return Promises
+* Deprecates the CommonJS Node.js API
+* Requires Node.js v18.12.0+
+
+Read about breaking changes in the Stylelint [**Migrating to v16.0.0**](https://github.com/stylelint/stylelint/blob/main/docs/migration-guide/to-16.md#breaking-changes) guide.
+
 ## 1.1.1
 
 This release includes:

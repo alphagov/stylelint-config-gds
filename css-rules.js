@@ -66,11 +66,6 @@ module.exports = {
     // https://stylelint.io/user-guide/rules/function-url-scheme-allowed-list/
     // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L230
     'function-url-scheme-allowed-list': ['data'],
-    // Traditionally GDS linters haven't had line length rules, which means
-    // this would be inconsistent with JS linting and have a lot of churn
-    // to apply
-    // https://stylelint.io/user-guide/rules/max-line-length/
-    'max-line-length': null,
     // Disallow deep nesting, ideally only exceptions (such as .js-enabled) should
     // have nesting
     // https://stylelint.io/user-guide/rules/max-nesting-depth/
