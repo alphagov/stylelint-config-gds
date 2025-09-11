@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "jest-light-runner": "^0.6.0",
+    "jest-light-runner": "^0.7.10",
     "standard": "^17.1.2",
     "stylelint": "^16.11.0"
   },
