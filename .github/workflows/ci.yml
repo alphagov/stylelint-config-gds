@@ -24,6 +24,8 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     permissions:
+      # Need id-token write access to generate OICD tokens
+      id-token: write
       contents: write
     steps:
       - uses: actions/checkout@v4
@@ -32,6 +34,9 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
           registry-url: 'https://registry.npmjs.org'
+      - name: Install correct npm version
+        # For OIDC, we need npm 11.5.1 or later
+        run: npm install -g npm@11.6.0
       - name: Establish version
         run: |
           LOCAL=$(node -p "require('./package.json').version")
@@ -47,5 +52,3 @@ jobs:
       - name: Release to NPM
         if: ${{ steps.version.outputs.local != steps.version.outputs.remote }}
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.ALPHAGOV_NPM_AUTOMATION_TOKEN }}
