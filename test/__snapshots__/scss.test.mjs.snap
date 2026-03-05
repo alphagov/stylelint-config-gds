@@ -19,12 +19,11 @@ exports[`Scss rules matches snapshots 1`] = `
     "scss/at-if-closing-brace-newline-after": [Function],
     "scss/at-if-closing-brace-space-after": [Function],
     "scss/at-if-no-null": [Function],
-    "scss/at-import-no-partial-leading-underscore": [Function],
-    "scss/at-import-partial-extension": [Function],
-    "scss/at-import-partial-extension-blacklist": [Function],
-    "scss/at-import-partial-extension-whitelist": [Function],
+    "scss/at-import-partial-extension-allowed-list": [Function],
+    "scss/at-import-partial-extension-disallowed-list": [Function],
     "scss/at-mixin-argumentless-call-parentheses": [Function],
     "scss/at-mixin-named-arguments": [Function],
+    "scss/at-mixin-no-risky-nesting-selector": [Function],
     "scss/at-mixin-parentheses-space-before": [Function],
     "scss/at-mixin-pattern": [Function],
     "scss/at-root-no-redundant": [Function],
@@ -37,6 +36,7 @@ exports[`Scss rules matches snapshots 1`] = `
     "scss/comment-no-loud": [Function],
     "scss/declaration-nested-properties": [Function],
     "scss/declaration-nested-properties-no-divided-groups": [Function],
+    "scss/declaration-property-value-no-unknown": [Function],
     "scss/dimension-no-non-numeric-values": [Function],
     "scss/dollar-variable-colon-newline-after": [Function],
     "scss/dollar-variable-colon-space-after": [Function],
@@ -52,24 +52,29 @@ exports[`Scss rules matches snapshots 1`] = `
     "scss/double-slash-comment-inline": [Function],
     "scss/double-slash-comment-whitespace-inside": [Function],
     "scss/function-calculation-no-interpolation": [Function],
+    "scss/function-color-channel": [Function],
     "scss/function-color-relative": [Function],
     "scss/function-disallowed-list": [Function],
     "scss/function-no-unknown": [Function],
     "scss/function-quote-no-quoted-strings-inside": [Function],
     "scss/function-unquote-no-unquoted-strings-inside": [Function],
     "scss/load-no-partial-leading-underscore": [Function],
+    "scss/load-partial-extension": [Function],
     "scss/map-keys-quotes": [Function],
     "scss/media-feature-value-dollar-variable": [Function],
     "scss/no-dollar-variables": [Function],
     "scss/no-duplicate-dollar-variables": [Function],
+    "scss/no-duplicate-load-rules": [Function],
     "scss/no-duplicate-mixins": [Function],
     "scss/no-global-function-names": [Function],
+    "scss/no-unused-private-members": [Function],
     "scss/operator-no-newline-after": [Function],
     "scss/operator-no-newline-before": [Function],
     "scss/operator-no-unspaced": [Function],
     "scss/partial-no-import": [Function],
     "scss/percent-placeholder-pattern": [Function],
     "scss/property-no-unknown": [Function],
+    "scss/selector-class-pattern": [Function],
     "scss/selector-nest-combinators": [Function],
     "scss/selector-no-redundant-nesting-selector": [Function],
     "scss/selector-no-union-class-name": [Function],
@@ -91,16 +96,28 @@ exports[`Scss rules matches snapshots 1`] = `
         ],
       },
     ],
+    "at-rule-descriptor-no-unknown": null,
+    "at-rule-descriptor-value-no-unknown": null,
     "at-rule-disallowed-list": [
       [
         "debug",
       ],
     ],
     "at-rule-empty-line-before": null,
+    "at-rule-no-deprecated": [
+      true,
+    ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": null,
+    "at-rule-prelude-no-invalid": null,
     "block-no-empty": [
       true,
+    ],
+    "block-no-redundant-nested-style-rules": [
+      true,
+    ],
+    "color-function-alias-notation": [
+      "without-alpha",
     ],
     "color-function-notation": [
       "legacy",
@@ -128,6 +145,12 @@ exports[`Scss rules matches snapshots 1`] = `
     "comment-no-empty": null,
     "comment-whitespace-inside": [
       "always",
+    ],
+    "container-name-pattern": [
+      "^(--)?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
     ],
     "custom-media-pattern": [
       "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
@@ -186,6 +209,10 @@ exports[`Scss rules matches snapshots 1`] = `
         ],
       },
     ],
+    "declaration-property-value-keyword-no-deprecated": [
+      true,
+    ],
+    "declaration-property-value-no-unknown": null,
     "font-family-name-quotes": [
       "always-where-recommended",
     ],
@@ -237,11 +264,21 @@ exports[`Scss rules matches snapshots 1`] = `
         "message": [Function],
       },
     ],
+    "layer-name-pattern": [
+      "^([a-z][a-z0-9]*)([.-][a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
     "length-zero-no-unit": [
       true,
       {
         "ignore": [
           "custom-properties",
+        ],
+        "ignorePreludeOfAtRules": [
+          "function",
+          "mixin",
         ],
       },
     ],
@@ -261,20 +298,30 @@ exports[`Scss rules matches snapshots 1`] = `
       true,
     ],
     "media-feature-name-no-vendor-prefix": null,
+    "media-feature-name-value-no-unknown": null,
     "media-feature-range-notation": [
       "prefix",
     ],
     "media-query-no-invalid": null,
+    "media-type-no-deprecated": [
+      true,
+    ],
     "named-grid-areas-no-invalid": [
       true,
+    ],
+    "nesting-selector-no-missing-scoping-root": [
+      true,
+      {
+        "ignoreAtRules": [
+          "mixin",
+        ],
+      },
     ],
     "no-descending-specificity": null,
     "no-duplicate-at-import-rules": [
       true,
     ],
-    "no-duplicate-selectors": [
-      true,
-    ],
+    "no-duplicate-selectors": null,
     "no-empty-source": [
       true,
     ],
@@ -282,11 +329,17 @@ exports[`Scss rules matches snapshots 1`] = `
       true,
     ],
     "no-invalid-position-at-import-rule": null,
+    "no-invalid-position-declaration": [
+      true,
+    ],
     "no-irregular-whitespace": [
       true,
     ],
     "number-max-precision": [
       4,
+    ],
+    "property-no-deprecated": [
+      true,
     ],
     "property-no-unknown": [
       true,
@@ -336,9 +389,6 @@ exports[`Scss rules matches snapshots 1`] = `
     "scss/at-if-no-null": [
       true,
     ],
-    "scss/at-import-partial-extension": [
-      "never",
-    ],
     "scss/at-mixin-argumentless-call-parentheses": [
       "never",
     ],
@@ -365,7 +415,7 @@ exports[`Scss rules matches snapshots 1`] = `
       true,
     ],
     "scss/dollar-variable-colon-space-after": [
-      "always",
+      "always-single-line",
     ],
     "scss/dollar-variable-colon-space-before": [
       "never",
@@ -392,6 +442,9 @@ exports[`Scss rules matches snapshots 1`] = `
     ],
     "scss/load-no-partial-leading-underscore": [
       true,
+    ],
+    "scss/load-partial-extension": [
+      "never",
     ],
     "scss/no-duplicate-mixins": [
       true,
@@ -467,6 +520,9 @@ exports[`Scss rules matches snapshots 1`] = `
       true,
     ],
     "string-no-newline": [
+      true,
+    ],
+    "syntax-string-no-invalid": [
       true,
     ],
     "unit-no-unknown": [
