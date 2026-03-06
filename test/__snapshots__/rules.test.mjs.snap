@@ -1,0 +1,779 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`css configuration matches snapshot 1`] = `
+{
+  "rules": {
+    "alpha-value-notation": [
+      "number",
+    ],
+    "annotation-no-unknown": [
+      true,
+    ],
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": [
+      true,
+    ],
+    "at-rule-no-vendor-prefix": null,
+    "block-no-empty": [
+      true,
+    ],
+    "color-function-notation": [
+      "legacy",
+    ],
+    "color-hex-length": [
+      "long",
+    ],
+    "color-named": [
+      "never",
+    ],
+    "color-no-invalid-hex": [
+      true,
+    ],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested",
+        ],
+        "ignore": [
+          "stylelint-commands",
+        ],
+      },
+    ],
+    "comment-no-empty": [
+      true,
+    ],
+    "comment-whitespace-inside": [
+      "always",
+    ],
+    "custom-media-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-custom-property",
+          "first-nested",
+        ],
+        "ignore": [
+          "after-comment",
+          "inside-single-line-block",
+        ],
+      },
+    ],
+    "custom-property-no-missing-var-function": [
+      true,
+    ],
+    "custom-property-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "declaration-block-no-duplicate-custom-properties": [
+      true,
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates-with-different-syntaxes",
+        ],
+      },
+    ],
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+    ],
+    "declaration-block-single-line-max-declarations": [
+      0,
+    ],
+    "declaration-empty-line-before": null,
+    "declaration-no-important": [
+      true,
+    ],
+    "declaration-property-value-disallowed-list": [
+      {
+        "/transition/": [
+          "/all/",
+        ],
+      },
+    ],
+    "font-family-name-quotes": [
+      "always-where-recommended",
+    ],
+    "font-family-no-duplicate-names": [
+      true,
+    ],
+    "font-family-no-missing-generic-family-keyword": [
+      true,
+    ],
+    "function-calc-no-unspaced-operator": [
+      true,
+    ],
+    "function-linear-gradient-no-nonstandard-direction": [
+      true,
+    ],
+    "function-name-case": [
+      "lower",
+    ],
+    "function-no-unknown": [
+      true,
+    ],
+    "function-url-no-scheme-relative": [
+      true,
+    ],
+    "function-url-quotes": [
+      "always",
+    ],
+    "function-url-scheme-allowed-list": [
+      [
+        "data",
+      ],
+    ],
+    "hue-degree-notation": [
+      "angle",
+    ],
+    "import-notation": [
+      "url",
+    ],
+    "keyframe-block-no-duplicate-selectors": [
+      true,
+    ],
+    "keyframe-declaration-no-important": [
+      true,
+    ],
+    "keyframe-selector-notation": [
+      "percentage-unless-within-keyword-only-block",
+    ],
+    "keyframes-name-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        "ignore": [
+          "custom-properties",
+        ],
+      },
+    ],
+    "lightness-notation": [
+      "percentage",
+    ],
+    "max-nesting-depth": [
+      2,
+      {
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes",
+        ],
+      },
+    ],
+    "media-feature-name-no-unknown": [
+      true,
+    ],
+    "media-feature-name-no-vendor-prefix": null,
+    "media-feature-range-notation": [
+      "prefix",
+    ],
+    "media-query-no-invalid": [
+      true,
+    ],
+    "named-grid-areas-no-invalid": [
+      true,
+    ],
+    "no-descending-specificity": null,
+    "no-duplicate-at-import-rules": [
+      true,
+    ],
+    "no-duplicate-selectors": [
+      true,
+    ],
+    "no-empty-source": [
+      true,
+    ],
+    "no-invalid-double-slash-comments": [
+      true,
+    ],
+    "no-invalid-position-at-import-rule": [
+      true,
+    ],
+    "no-irregular-whitespace": [
+      true,
+    ],
+    "number-max-precision": [
+      4,
+    ],
+    "property-no-unknown": [
+      true,
+    ],
+    "property-no-vendor-prefix": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "first-nested",
+        ],
+        "ignore": [
+          "after-comment",
+        ],
+      },
+    ],
+    "selector-anb-no-unmatchable": [
+      true,
+    ],
+    "selector-attribute-quotes": [
+      "always",
+    ],
+    "selector-class-pattern": [
+      /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
+      {
+        "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
+        "resolveNestedSelectors": true,
+      },
+    ],
+    "selector-id-pattern": [
+      /\\^\\[a-z\\]\\(\\[a-z0-9-\\]\\)\\*\\$/,
+      {
+        "message": "Ids may only contain [a-z0-9-] characters and must start with [a-z]",
+        "resolveNestedSelectors": true,
+      },
+    ],
+    "selector-max-id": [
+      0,
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+        ],
+      },
+    ],
+    "selector-no-vendor-prefix": null,
+    "selector-not-notation": [
+      "simple",
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+    ],
+    "selector-pseudo-element-colon-notation": [
+      "double",
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+    ],
+    "selector-type-case": [
+      "lower",
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "custom-elements",
+        ],
+      },
+    ],
+    "shorthand-property-no-redundant-values": [
+      true,
+    ],
+    "string-no-newline": [
+      true,
+    ],
+    "unit-no-unknown": [
+      true,
+    ],
+    "value-keyword-case": [
+      "lower",
+    ],
+    "value-no-vendor-prefix": null,
+  },
+}
+`;
+
+exports[`scss configuration matches snapshot 1`] = `
+{
+  "customSyntax": {
+    "parse": [Function],
+    "stringify": [Function],
+  },
+  "pluginFunctions": {
+    "scss/at-each-key-value-single-line": [Function],
+    "scss/at-else-closing-brace-newline-after": [Function],
+    "scss/at-else-closing-brace-space-after": [Function],
+    "scss/at-else-empty-line-before": [Function],
+    "scss/at-else-if-parentheses-space-before": [Function],
+    "scss/at-extend-no-missing-placeholder": [Function],
+    "scss/at-function-named-arguments": [Function],
+    "scss/at-function-parentheses-space-before": [Function],
+    "scss/at-function-pattern": [Function],
+    "scss/at-if-closing-brace-newline-after": [Function],
+    "scss/at-if-closing-brace-space-after": [Function],
+    "scss/at-if-no-null": [Function],
+    "scss/at-import-no-partial-leading-underscore": [Function],
+    "scss/at-import-partial-extension": [Function],
+    "scss/at-import-partial-extension-blacklist": [Function],
+    "scss/at-import-partial-extension-whitelist": [Function],
+    "scss/at-mixin-argumentless-call-parentheses": [Function],
+    "scss/at-mixin-named-arguments": [Function],
+    "scss/at-mixin-parentheses-space-before": [Function],
+    "scss/at-mixin-pattern": [Function],
+    "scss/at-root-no-redundant": [Function],
+    "scss/at-rule-conditional-no-parentheses": [Function],
+    "scss/at-rule-no-unknown": [Function],
+    "scss/at-use-no-redundant-alias": [Function],
+    "scss/at-use-no-unnamespaced": [Function],
+    "scss/block-no-redundant-nesting": [Function],
+    "scss/comment-no-empty": [Function],
+    "scss/comment-no-loud": [Function],
+    "scss/declaration-nested-properties": [Function],
+    "scss/declaration-nested-properties-no-divided-groups": [Function],
+    "scss/dimension-no-non-numeric-values": [Function],
+    "scss/dollar-variable-colon-newline-after": [Function],
+    "scss/dollar-variable-colon-space-after": [Function],
+    "scss/dollar-variable-colon-space-before": [Function],
+    "scss/dollar-variable-default": [Function],
+    "scss/dollar-variable-empty-line-after": [Function],
+    "scss/dollar-variable-empty-line-before": [Function],
+    "scss/dollar-variable-first-in-block": [Function],
+    "scss/dollar-variable-no-missing-interpolation": [Function],
+    "scss/dollar-variable-no-namespaced-assignment": [Function],
+    "scss/dollar-variable-pattern": [Function],
+    "scss/double-slash-comment-empty-line-before": [Function],
+    "scss/double-slash-comment-inline": [Function],
+    "scss/double-slash-comment-whitespace-inside": [Function],
+    "scss/function-calculation-no-interpolation": [Function],
+    "scss/function-color-relative": [Function],
+    "scss/function-disallowed-list": [Function],
+    "scss/function-no-unknown": [Function],
+    "scss/function-quote-no-quoted-strings-inside": [Function],
+    "scss/function-unquote-no-unquoted-strings-inside": [Function],
+    "scss/load-no-partial-leading-underscore": [Function],
+    "scss/map-keys-quotes": [Function],
+    "scss/media-feature-value-dollar-variable": [Function],
+    "scss/no-dollar-variables": [Function],
+    "scss/no-duplicate-dollar-variables": [Function],
+    "scss/no-duplicate-mixins": [Function],
+    "scss/no-global-function-names": [Function],
+    "scss/operator-no-newline-after": [Function],
+    "scss/operator-no-newline-before": [Function],
+    "scss/operator-no-unspaced": [Function],
+    "scss/partial-no-import": [Function],
+    "scss/percent-placeholder-pattern": [Function],
+    "scss/property-no-unknown": [Function],
+    "scss/selector-nest-combinators": [Function],
+    "scss/selector-no-redundant-nesting-selector": [Function],
+    "scss/selector-no-union-class-name": [Function],
+  },
+  "plugins": [
+    "node_modules/stylelint-scss/src/index.js",
+  ],
+  "rules": {
+    "alpha-value-notation": [
+      "number",
+    ],
+    "annotation-no-unknown": [
+      true,
+      {
+        "ignoreAnnotations": [
+          "default",
+          "global",
+          "important",
+        ],
+      },
+    ],
+    "at-rule-disallowed-list": [
+      [
+        "debug",
+      ],
+    ],
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": null,
+    "at-rule-no-vendor-prefix": null,
+    "block-no-empty": [
+      true,
+    ],
+    "color-function-notation": [
+      "legacy",
+    ],
+    "color-hex-length": [
+      "long",
+    ],
+    "color-named": [
+      "never",
+    ],
+    "color-no-invalid-hex": [
+      true,
+    ],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested",
+        ],
+        "ignore": [
+          "stylelint-commands",
+        ],
+      },
+    ],
+    "comment-no-empty": null,
+    "comment-whitespace-inside": [
+      "always",
+    ],
+    "custom-media-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "after-custom-property",
+          "first-nested",
+        ],
+        "ignore": [
+          "after-comment",
+          "inside-single-line-block",
+        ],
+      },
+    ],
+    "custom-property-no-missing-var-function": [
+      true,
+    ],
+    "custom-property-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "declaration-block-no-duplicate-custom-properties": [
+      true,
+    ],
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates-with-different-syntaxes",
+        ],
+      },
+    ],
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-block-no-shorthand-property-overrides": [
+      true,
+    ],
+    "declaration-block-single-line-max-declarations": [
+      0,
+    ],
+    "declaration-empty-line-before": null,
+    "declaration-no-important": [
+      true,
+    ],
+    "declaration-property-value-disallowed-list": [
+      {
+        "/transition/": [
+          "/all/",
+        ],
+      },
+    ],
+    "font-family-name-quotes": [
+      "always-where-recommended",
+    ],
+    "font-family-no-duplicate-names": [
+      true,
+    ],
+    "font-family-no-missing-generic-family-keyword": [
+      true,
+    ],
+    "function-calc-no-unspaced-operator": [
+      true,
+    ],
+    "function-linear-gradient-no-nonstandard-direction": [
+      true,
+    ],
+    "function-name-case": [
+      "lower",
+    ],
+    "function-no-unknown": null,
+    "function-url-no-scheme-relative": [
+      true,
+    ],
+    "function-url-quotes": [
+      "always",
+    ],
+    "function-url-scheme-allowed-list": [
+      [
+        "data",
+      ],
+    ],
+    "hue-degree-notation": [
+      "angle",
+    ],
+    "import-notation": [
+      "string",
+    ],
+    "keyframe-block-no-duplicate-selectors": [
+      true,
+    ],
+    "keyframe-declaration-no-important": [
+      true,
+    ],
+    "keyframe-selector-notation": [
+      "percentage-unless-within-keyword-only-block",
+    ],
+    "keyframes-name-pattern": [
+      "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
+    "length-zero-no-unit": [
+      true,
+      {
+        "ignore": [
+          "custom-properties",
+        ],
+      },
+    ],
+    "lightness-notation": [
+      "percentage",
+    ],
+    "max-nesting-depth": [
+      2,
+      {
+        "ignore": [
+          "blockless-at-rules",
+          "pseudo-classes",
+        ],
+      },
+    ],
+    "media-feature-name-no-unknown": [
+      true,
+    ],
+    "media-feature-name-no-vendor-prefix": null,
+    "media-feature-range-notation": [
+      "prefix",
+    ],
+    "media-query-no-invalid": null,
+    "named-grid-areas-no-invalid": [
+      true,
+    ],
+    "no-descending-specificity": null,
+    "no-duplicate-at-import-rules": [
+      true,
+    ],
+    "no-duplicate-selectors": [
+      true,
+    ],
+    "no-empty-source": [
+      true,
+    ],
+    "no-invalid-double-slash-comments": [
+      true,
+    ],
+    "no-invalid-position-at-import-rule": null,
+    "no-irregular-whitespace": [
+      true,
+    ],
+    "number-max-precision": [
+      4,
+    ],
+    "property-no-unknown": [
+      true,
+    ],
+    "property-no-vendor-prefix": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": [
+          "first-nested",
+        ],
+        "ignore": [
+          "after-comment",
+        ],
+      },
+    ],
+    "scss/at-else-closing-brace-newline-after": [
+      "always-last-in-chain",
+    ],
+    "scss/at-else-closing-brace-space-after": [
+      "always-intermediate",
+    ],
+    "scss/at-else-empty-line-before": [
+      "never",
+    ],
+    "scss/at-else-if-parentheses-space-before": [
+      "always",
+    ],
+    "scss/at-extend-no-missing-placeholder": [
+      true,
+    ],
+    "scss/at-function-parentheses-space-before": [
+      "never",
+    ],
+    "scss/at-function-pattern": [
+      /\\^_\\?\\(\\[a-z0-9-\\]\\)\\*\\$/,
+      {
+        "message": "Function names may only contain [a-z0-9-] characters and may start with an underscore",
+      },
+    ],
+    "scss/at-if-closing-brace-newline-after": [
+      "always-last-in-chain",
+    ],
+    "scss/at-if-closing-brace-space-after": [
+      "always-intermediate",
+    ],
+    "scss/at-if-no-null": [
+      true,
+    ],
+    "scss/at-import-partial-extension": [
+      "never",
+    ],
+    "scss/at-mixin-argumentless-call-parentheses": [
+      "never",
+    ],
+    "scss/at-mixin-parentheses-space-before": [
+      "never",
+    ],
+    "scss/at-mixin-pattern": [
+      /\\^_\\?\\(\\[a-z0-9-\\]\\)\\*\\$/,
+      {
+        "message": "Mixin names may only contain [a-z0-9-] characters and may start with an underscore",
+      },
+    ],
+    "scss/at-rule-conditional-no-parentheses": [
+      true,
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+    ],
+    "scss/comment-no-empty": null,
+    "scss/comment-no-loud": [
+      true,
+    ],
+    "scss/declaration-nested-properties-no-divided-groups": [
+      true,
+    ],
+    "scss/dollar-variable-colon-space-after": [
+      "always",
+    ],
+    "scss/dollar-variable-colon-space-before": [
+      "never",
+    ],
+    "scss/dollar-variable-empty-line-before": null,
+    "scss/dollar-variable-no-missing-interpolation": [
+      true,
+    ],
+    "scss/dollar-variable-pattern": [
+      /\\^_\\?\\(\\[a-z0-9-\\]\\)\\*\\$/,
+      {
+        "message": "Variable names may only contain [a-z0-9-] characters and may start with an underscore",
+      },
+    ],
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/double-slash-comment-whitespace-inside": [
+      "always",
+    ],
+    "scss/function-quote-no-quoted-strings-inside": [
+      true,
+    ],
+    "scss/function-unquote-no-unquoted-strings-inside": [
+      true,
+    ],
+    "scss/load-no-partial-leading-underscore": [
+      true,
+    ],
+    "scss/no-duplicate-mixins": [
+      true,
+    ],
+    "scss/no-global-function-names": null,
+    "scss/operator-no-newline-after": null,
+    "scss/operator-no-newline-before": null,
+    "scss/operator-no-unspaced": [
+      true,
+    ],
+    "scss/percent-placeholder-pattern": [
+      /\\^\\[a-z0-9-\\]\\*\\$/,
+      {
+        "message": "Placeholders may only contain [a-z0-9-] characters",
+      },
+    ],
+    "selector-anb-no-unmatchable": [
+      true,
+    ],
+    "selector-attribute-quotes": [
+      "always",
+    ],
+    "selector-class-pattern": [
+      /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
+      {
+        "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
+        "resolveNestedSelectors": true,
+      },
+    ],
+    "selector-id-pattern": [
+      /\\^\\[a-z\\]\\(\\[a-z0-9-\\]\\)\\*\\$/,
+      {
+        "message": "Ids may only contain [a-z0-9-] characters and must start with [a-z]",
+        "resolveNestedSelectors": true,
+      },
+    ],
+    "selector-max-id": [
+      0,
+    ],
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+        ],
+      },
+    ],
+    "selector-no-vendor-prefix": null,
+    "selector-not-notation": [
+      "simple",
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+    ],
+    "selector-pseudo-element-colon-notation": [
+      "double",
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+    ],
+    "selector-type-case": [
+      "lower",
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "custom-elements",
+        ],
+      },
+    ],
+    "shorthand-property-no-redundant-values": [
+      true,
+    ],
+    "string-no-newline": [
+      true,
+    ],
+    "unit-no-unknown": [
+      true,
+    ],
+    "value-keyword-case": [
+      "lower",
+    ],
+    "value-no-vendor-prefix": null,
+  },
+}
+`;
