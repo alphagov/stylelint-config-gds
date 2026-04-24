@@ -56,7 +56,7 @@
     "jest": "^30.3.0",
     "jest-light-runner": "^0.7.11",
     "standard": "^17.1.2",
-    "stylelint": "^16.11.0"
+    "stylelint": "^17.9.0"
   },
   "peerDependencies": {
     "stylelint": "^16.0.2"
