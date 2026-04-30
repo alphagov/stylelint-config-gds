@@ -85,6 +85,16 @@ module.exports = {
         message: 'Placeholders may only contain [a-z0-9-] characters'
       }
     ],
+    // Use the scss version of the rule which accounts for nesting
+    'selector-class-pattern': null,
+    'scss/selector-class-pattern': [
+      // a loose interpretation on hyphenated BEM in order to allow BEM
+      // style and govuk-! overrides
+      /^[a-z]([a-z0-9-_!])*$/, {
+        message: 'Class names may only contain [a-z0-9-_!] characters and ' +
+          'must start with [a-z]'
+      }
+    ],
     // Disable @import needing to be first declarations
     // @import has a different usage in SCSS to CSS and may be scoped or follow SCSS conditionals
     // https://stylelint.io/user-guide/rules/no-invalid-position-at-import-rule/
