@@ -102,7 +102,6 @@ module.exports = {
       // a loose interpretation on hyphenated BEM in order to allow BEM
       // style and govuk-! overrides
       /^[a-z]([a-z0-9-_!])*$/, {
-        resolveNestedSelectors: true,
         message: 'Class names may only contain [a-z0-9-_!] characters and ' +
           'must start with [a-z]'
       }

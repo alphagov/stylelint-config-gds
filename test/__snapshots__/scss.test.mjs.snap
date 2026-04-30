@@ -471,7 +471,6 @@ exports[`Scss rules matches snapshots 1`] = `
       /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
       {
         "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
-        "resolveNestedSelectors": true,
       },
     ],
     "selector-id-pattern": [
