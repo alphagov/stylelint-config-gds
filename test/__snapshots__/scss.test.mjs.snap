@@ -461,19 +461,19 @@ exports[`Scss rules matches snapshots 1`] = `
         "message": "Placeholders may only contain [a-z0-9-] characters",
       },
     ],
+    "scss/selector-class-pattern": [
+      /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
+      {
+        "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
+      },
+    ],
     "selector-anb-no-unmatchable": [
       true,
     ],
     "selector-attribute-quotes": [
       "always",
     ],
-    "selector-class-pattern": [
-      /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
-      {
-        "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
-        "resolveNestedSelectors": true,
-      },
-    ],
+    "selector-class-pattern": null,
     "selector-id-pattern": [
       /\\^\\[a-z\\]\\(\\[a-z0-9-\\]\\)\\*\\$/,
       {
