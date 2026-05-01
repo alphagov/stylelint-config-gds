@@ -6,6 +6,65 @@
   useful summary for people upgrading their application, not a replication
   of the commit log.
 
+## Unreleased
+
+### Breaking change: Requires Stylelint 17 and [Node.js](http://Node.js) v20.19.0+
+
+This release upgrades Stylelint to version 17, which requires a minimum Node.js version of v20.19.0.
+
+If you use Stylelint JavaScript API, note that Stylelint 17 now only supports ES Modules and no longer supports CommonJS.
+
+Read about breaking changes in the Stylelint [Migrating to v17.0.0](https://stylelint.io/migration-guide/to-17/) guide.
+
+### Breaking change: New or re-configured Stylelint rules
+
+This release also upgrades the configuration packages used by stylelint-config-gds:
+
+- [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard/tree/40.0.0) to version 40.0.0 and the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended/tree/18.0.0) it depends on to version 18.0.0  
+- [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss/tree/v17.0.0) to version 17.0.0 and the [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss/tree/v17.0.0) it depends on to version 17.0.0
+
+You may see new errors when linting from the following new rules:
+
+- [block-no-redundant-nested-style-rules](https://stylelint.io/user-guide/rules/block-no-redundant-nested-style-rules/)  
+- [color-function-alias-notation](https://stylelint.io/user-guide/rules/color-function-alias-notation/) (automatically fixable by running `stylelint --fix`)  
+- [container-name-pattern](https://stylelint.io/user-guide/rules/container-name-pattern/)   
+- [layer-name-pattern](https://stylelint.io/user-guide/rules/layer-name-pattern/)  
+- [media-type-no-deprecated](https://stylelint.io/user-guide/rules/media-type-no-deprecated/)  
+- [nesting-selector-no-missing-scoping-root](https://stylelint.io/user-guide/rules/nesting-selector-no-missing-scoping-root/)  
+- [no-invalid-position-declaration](https://stylelint.io/user-guide/rules/no-invalid-position-declaration/)  
+- [property-no-deprecated](https://stylelint.io/user-guide/rules/property-no-deprecated/)  
+- [syntax-string-no-invalid](https://stylelint.io/user-guide/rules/syntax-string-no-invalid/)  
+- [at-rule-descriptor-no-unknown](https://stylelint.io/user-guide/rules/at-rule-descriptor-no-unknown/)  
+- [at-rule-descriptor-value-no-unknown](https://stylelint.io/user-guide/rules/at-rule-descriptor-value-no-unknown/)  
+- [at-rule-no-deprecated](https://stylelint.io/user-guide/rules/at-rule-no-deprecated/)  
+- [declaration-property-value-keyword-no-deprecated](https://stylelint.io/user-guide/rules/declaration-property-value-keyword-no-deprecated/)  
+- [declaration-property-value-no-unknown](https://stylelint.io/user-guide/rules/declaration-property-value-no-unknown/)  
+- [media-feature-name-value-no-unknown](https://stylelint.io/user-guide/rules/media-feature-name-value-no-unknown/)
+
+You may also see new errors from the [string-no-newline](https://stylelint.io/user-guide/rules/string-no-newline/) rule, now configured with `{ ignore: ['at-rule-preludes', 'declaration-values'] }`.
+
+We recommend you update your code to fix the errors and only override the rule in your own stylelint configuration if you have a strong reason to (for example, adding exceptions for `property-no-deprecated` because of the browsers you need to support).
+
+### Removed rules
+
+The upgrades of the configuration packages also remove some rules or options. While this won’t trigger new linting errors, this means some verifications will no longer happen on your code.
+
+This release also removes the following rules:
+
+- [color-no-invalid-hex](https://stylelint.io/user-guide/rules/color-no-invalid-hex/)   
+- [function-linear-gradient-no-nonstandard-direction](https://stylelint.io/user-guide/rules/function-linear-gradient-no-nonstandard-direction/)  
+- [function-no-unknown](https://stylelint.io/user-guide/rules/function-no-unknown/)  
+- [unit-no-unknown](https://stylelint.io/user-guide/rules/function-no-unknown/)
+
+If you find these rules useful for your project, you can add them back in your own stylelint configuration file.
+
+If you use the SCSS configuration, this release also removes the following rules:
+
+- [no-descending-specificity](https://stylelint.io/user-guide/rules/no-descending-specificity/)  
+- [no-duplicate-selectors](https://stylelint.io/user-guide/rules/no-duplicate-selectors/)
+
+Those have been disabled due to false positives since Sass started following standard CSS nesting and we recommend you keep them disabled.
+
 ## 2.0.0
 
 This release upgrades to Stylelint 16 and [removes rules deprecated in Stylelint 15](#breaking-change-removal-of-stylistic-rules)
