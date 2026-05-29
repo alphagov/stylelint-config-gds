@@ -9,13 +9,36 @@ exports[`CSS rules matches snapshots 1`] = `
     "annotation-no-unknown": [
       true,
     ],
+    "at-rule-descriptor-no-unknown": [
+      true,
+    ],
+    "at-rule-descriptor-value-no-unknown": [
+      true,
+    ],
     "at-rule-empty-line-before": null,
+    "at-rule-no-deprecated": [
+      true,
+    ],
     "at-rule-no-unknown": [
       true,
     ],
     "at-rule-no-vendor-prefix": null,
+    "at-rule-prelude-no-invalid": [
+      true,
+      {
+        "ignoreAtRules": [
+          "media",
+        ],
+      },
+    ],
     "block-no-empty": [
       true,
+    ],
+    "block-no-redundant-nested-style-rules": [
+      true,
+    ],
+    "color-function-alias-notation": [
+      "without-alpha",
     ],
     "color-function-notation": [
       "legacy",
@@ -25,9 +48,6 @@ exports[`CSS rules matches snapshots 1`] = `
     ],
     "color-named": [
       "never",
-    ],
-    "color-no-invalid-hex": [
-      true,
     ],
     "comment-empty-line-before": [
       "always",
@@ -45,6 +65,12 @@ exports[`CSS rules matches snapshots 1`] = `
     ],
     "comment-whitespace-inside": [
       "always",
+    ],
+    "container-name-pattern": [
+      "^(--)?([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
     ],
     "custom-media-pattern": [
       "^([a-z][a-z0-9]*)(-[a-z0-9]+)*$",
@@ -103,6 +129,12 @@ exports[`CSS rules matches snapshots 1`] = `
         ],
       },
     ],
+    "declaration-property-value-keyword-no-deprecated": [
+      true,
+    ],
+    "declaration-property-value-no-unknown": [
+      true,
+    ],
     "font-family-name-quotes": [
       "always-where-recommended",
     ],
@@ -115,14 +147,8 @@ exports[`CSS rules matches snapshots 1`] = `
     "function-calc-no-unspaced-operator": [
       true,
     ],
-    "function-linear-gradient-no-nonstandard-direction": [
-      true,
-    ],
     "function-name-case": [
       "lower",
-    ],
-    "function-no-unknown": [
-      true,
     ],
     "function-url-no-scheme-relative": [
       true,
@@ -156,6 +182,12 @@ exports[`CSS rules matches snapshots 1`] = `
         "message": [Function],
       },
     ],
+    "layer-name-pattern": [
+      "^([a-z][a-z0-9]*)([.-][a-z0-9]+)*$",
+      {
+        "message": [Function],
+      },
+    ],
     "length-zero-no-unit": [
       true,
       {
@@ -180,13 +212,22 @@ exports[`CSS rules matches snapshots 1`] = `
       true,
     ],
     "media-feature-name-no-vendor-prefix": null,
+    "media-feature-name-value-no-unknown": [
+      true,
+    ],
     "media-feature-range-notation": [
       "prefix",
     ],
     "media-query-no-invalid": [
       true,
     ],
+    "media-type-no-deprecated": [
+      true,
+    ],
     "named-grid-areas-no-invalid": [
+      true,
+    ],
+    "nesting-selector-no-missing-scoping-root": [
       true,
     ],
     "no-descending-specificity": null,
@@ -205,11 +246,17 @@ exports[`CSS rules matches snapshots 1`] = `
     "no-invalid-position-at-import-rule": [
       true,
     ],
+    "no-invalid-position-declaration": [
+      true,
+    ],
     "no-irregular-whitespace": [
       true,
     ],
     "number-max-precision": [
       4,
+    ],
+    "property-no-deprecated": [
+      true,
     ],
     "property-no-unknown": [
       true,
@@ -236,7 +283,6 @@ exports[`CSS rules matches snapshots 1`] = `
       /\\^\\[a-z\\]\\(\\[a-z0-9-_!\\]\\)\\*\\$/,
       {
         "message": "Class names may only contain [a-z0-9-_!] characters and must start with [a-z]",
-        "resolveNestedSelectors": true,
       },
     ],
     "selector-id-pattern": [
@@ -286,8 +332,14 @@ exports[`CSS rules matches snapshots 1`] = `
     ],
     "string-no-newline": [
       true,
+      {
+        "ignore": [
+          "at-rule-preludes",
+          "declaration-values",
+        ],
+      },
     ],
-    "unit-no-unknown": [
+    "syntax-string-no-invalid": [
       true,
     ],
     "value-keyword-case": [

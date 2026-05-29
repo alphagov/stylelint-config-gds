@@ -49,16 +49,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-config-standard-scss": "^13.0.0"
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-standard-scss": "^17.0.0"
   },
   "devDependencies": {
     "jest": "^30.3.0",
     "jest-light-runner": "^0.7.11",
     "standard": "^17.1.2",
-    "stylelint": "^16.11.0"
+    "stylelint": "^17.4.0"
   },
   "peerDependencies": {
-    "stylelint": "^16.0.2"
+    "stylelint": "^17.4.0"
   }
 }
