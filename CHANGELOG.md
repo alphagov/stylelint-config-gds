@@ -8,6 +8,10 @@
 
 ## Unreleased
 
+## 3.0.0
+
+To install this version with npm, run `npm install stylelint-config-gds@3.0.0`.
+
 ### Breaking change: Requires Stylelint 17 and [Node.js](http://Node.js) v20.19.0+
 
 This release upgrades Stylelint to version 17, which requires a minimum Node.js version of v20.19.0.
