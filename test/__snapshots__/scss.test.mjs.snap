@@ -2,11 +2,7 @@
 
 exports[`Scss rules matches snapshots 1`] = `
 {
-  "customSyntax": {
-    "parse": [Function],
-    "stringify": [Function],
-  },
-  "pluginFunctions": {
+  "_pluginFunctions": {
     "scss/at-each-key-value-single-line": [Function],
     "scss/at-else-closing-brace-newline-after": [Function],
     "scss/at-else-closing-brace-space-after": [Function],
@@ -78,6 +74,14 @@ exports[`Scss rules matches snapshots 1`] = `
     "scss/selector-nest-combinators": [Function],
     "scss/selector-no-redundant-nesting-selector": [Function],
     "scss/selector-no-union-class-name": [Function],
+  },
+  "_resolvedCustomSyntax": {
+    "parse": [Function],
+    "stringify": [Function],
+  },
+  "customSyntax": {
+    "parse": [Function],
+    "stringify": [Function],
   },
   "plugins": [
     "node_modules/stylelint-scss/src/index.js",
