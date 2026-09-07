@@ -53,7 +53,7 @@
     "stylelint-config-standard-scss": "^17.0.0"
   },
   "devDependencies": {
-    "jest": "^30.5.0",
+    "jest": "^30.5.1",
     "jest-light-runner": "^0.8.1",
     "standard": "^17.1.2",
     "stylelint": "^17.14.1"
