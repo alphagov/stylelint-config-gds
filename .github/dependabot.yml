@@ -4,8 +4,14 @@ updates:
   # Update npm packages
   - package-ecosystem: npm
     directory: /
+    open-pull-requests-limit: 15
     schedule:
-      interval: daily
+      interval: monthly
+      time: '10:30'
+      timezone: 'Europe/London'
+    cooldown:
+      default-days: 7
+    versioning-strategy: increase
 
     # Bump package.json versions too
     # in addition to security updates
@@ -16,5 +22,11 @@ updates:
   # Update GitHub Actions
   - package-ecosystem: github-actions
     directory: /
+    open-pull-requests-limit: 15
     schedule:
-      interval: daily
+      interval: monthly
+      time: '10:30'
+      timezone: 'Europe/London'
+    cooldown:
+      default-days: 7
+    versioning-strategy: increase
