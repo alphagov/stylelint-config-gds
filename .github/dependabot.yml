@@ -5,12 +5,24 @@ updates:
   - package-ecosystem: npm
     directory: /
     open-pull-requests-limit: 15
+
+    groups:
+      # Major bumps often require both Stylelint
+      # and the shared configurations to be updated
+      # at the same time
+      stylelint:
+        patterns:
+          - 'stylelint'
+          - 'stylelint-*'
+    
     schedule:
       interval: monthly
       time: '10:30'
       timezone: 'Europe/London'
+      
     cooldown:
       default-days: 7
+      
     versioning-strategy: increase
 
     # Bump package.json versions too
