@@ -29,7 +29,6 @@ updates:
     # in addition to security updates
     allow:
       - dependency-type: direct
-    versioning-strategy: increase
 
   # Update GitHub Actions
   - package-ecosystem: github-actions
