@@ -9,6 +9,9 @@ exports[`CSS rules matches snapshots 1`] = `
     "annotation-no-unknown": [
       true,
     ],
+    "at-charset-rule-no-invalid": [
+      true,
+    ],
     "at-rule-descriptor-no-unknown": [
       true,
     ],
@@ -115,9 +118,7 @@ exports[`CSS rules matches snapshots 1`] = `
     "declaration-block-no-shorthand-property-overrides": [
       true,
     ],
-    "declaration-block-single-line-max-declarations": [
-      0,
-    ],
+    "declaration-block-single-line-max-declarations": [],
     "declaration-empty-line-before": null,
     "declaration-no-important": [
       true,
@@ -295,6 +296,12 @@ exports[`CSS rules matches snapshots 1`] = `
     "selector-max-id": [
       0,
     ],
+    "selector-no-deprecated": [
+      true,
+    ],
+    "selector-no-invalid": [
+      true,
+    ],
     "selector-no-qualifying-type": [
       true,
       {
@@ -302,6 +309,9 @@ exports[`CSS rules matches snapshots 1`] = `
           "attribute",
         ],
       },
+    ],
+    "selector-no-unmatchable": [
+      true,
     ],
     "selector-no-vendor-prefix": null,
     "selector-not-notation": [
@@ -344,6 +354,9 @@ exports[`CSS rules matches snapshots 1`] = `
     ],
     "value-keyword-case": [
       "lower",
+    ],
+    "value-no-invalid": [
+      true,
     ],
     "value-no-vendor-prefix": null,
   },
