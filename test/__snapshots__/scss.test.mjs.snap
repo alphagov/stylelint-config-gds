@@ -200,7 +200,6 @@ exports[`Scss rules matches snapshots 1`] = `
     "declaration-block-no-shorthand-property-overrides": [
       true,
     ],
-    "declaration-block-single-line-max-declarations": [],
     "declaration-empty-line-before": null,
     "declaration-no-important": [
       true,

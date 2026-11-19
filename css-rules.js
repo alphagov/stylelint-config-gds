@@ -38,10 +38,6 @@ module.exports = {
     // This is disabled due to concerns that
     // it produces less readable code (see: https://github.com/alphagov/govuk-frontend/pull/2567)
     'declaration-block-no-redundant-longhand-properties': null,
-    // Require all rules to be multiline
-    // https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations/
-    // Originates from: https://github.com/alphagov/govuk-frontend/blob/e248b4027102b2684f592a0501630075bdfa1fab/config/.sass-lint.yml#L32
-    'declaration-block-single-line-max-declarations': 0,
     // It's common for us to break up groups of CSS with an empty line
     // https://stylelint.io/user-guide/rules/declaration-empty-line-before/
     'declaration-empty-line-before': null,
