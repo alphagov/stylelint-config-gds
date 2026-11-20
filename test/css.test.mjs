@@ -30,7 +30,7 @@ describe('CSS rules', () => {
     expect(config).toMatchSnapshot()
   })
 
-  it('outputs no warnings, error or deprecations', () => {
+  it('outputs no warnings, error or deprecations', async () => {
     const promise = stylelint.lint({ config: cssRules, code: goodCss })
     return expect(promise).resolves.toEqual(noErrors)
   })

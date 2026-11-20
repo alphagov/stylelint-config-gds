@@ -8,6 +8,49 @@
 
 ## Unreleased
 
+### Breaking changes
+
+#### Requires Stylelint 18 and [Node.js] v22.22.2+
+
+This release upgrades Stylelint to version 18, which requires a minimum version of v22.22.2.
+
+Note that Stylelint 18 requires extensions in the paths used in `extends`. Update your configuration to extend:
+- `stylelint-config-gds/scss.js` instead of `stylelint-config-gds/scss`
+- `stylelint-config-gds/css.js` instead of `stylelint-config-gds/css`
+
+Read about other breaking changes in the Stylelint [Migrating to v18.0.0](https://stylelint.io/migration-guide/to-18/) guide.
+
+We made this change in [pull request #180: Update to Stylelint 18 (including shared configurations)](https://github.com/alphagov/stylelint-config-gds/pull/180/)
+
+#### New Stylelint rules
+
+This release also upgrades the following configuration packages used by stylelint-config-gds:
+
+- [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard/tree/41.0.0) to version 41.0.0 and the [stylelint-config-recommended](https://github.com/stylelint/stylelint-config-recommended/tree/19.0.0) it depends on to version 19.0.0  
+- [stylelint-config-standard-scss](https://github.com/stylelint-scss/stylelint-config-standard-scss/tree/v18.0.0) to version 18.0.0 and the [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss/tree/v18.0.0) it depends on to version 18.0.0
+
+You may see new errors when linting from the following new rules:
+
+- [at-charset-rule-no-invalid](https://github.com/stylelint/stylelint/blob/main/lib/rules/at-charset-rule-no-invalid/README.md)
+- [selector-no-deprecated](https://github.com/stylelint/stylelint/blob/main/lib/rules/selector-no-deprecated/README.md)
+- [selector-no-invalid](https://github.com/stylelint/stylelint/blob/main/lib/rules/selector-no-invalid/README.md)
+- [selector-no-unmatchable](https://github.com/stylelint/stylelint/blob/main/lib/rules/selector-no-unmatchable/README.md)
+- [value-no-invalid](https://github.com/stylelint/stylelint/blob/main/lib/rules/value-no-invalid/README.md)
+
+We recommend you update your code to fix the errors and only override the rule in your own stylelint configuration if you have a strong reason to (for example, adding exceptions for `property-no-deprecated` because of the browsers you need to support).
+
+We made this change in [pull request #180: Update to Stylelint 18 (including shared configurations)](https://github.com/alphagov/stylelint-config-gds/pull/180/)
+
+### Rule changes
+
+#### `declaration-block-single-line-max-declarations` has been removed
+
+Stylelint 18 removed the `declaration-block-single-line-max-declarations` rule, previously part of `stylelint-config-gds`.
+
+If your project requires this rule, you can use the [`stylelint-stylistic` plugin](https://github.com/stylelint-stylistic/stylelint-stylistic) and enable it in your own stylelint configuration.
+
+We made this change in [pull request #180: Update to Stylelint 18 (including shared configurations)](https://github.com/alphagov/stylelint-config-gds/pull/180/)
+
 ## 3.0.0
 
 To install this version with npm, run `npm install stylelint-config-gds@3.0.0`.

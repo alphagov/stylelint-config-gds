@@ -100,6 +100,7 @@ exports[`Scss rules matches snapshots 1`] = `
         ],
       },
     ],
+    "at-charset-rule-no-invalid": null,
     "at-rule-descriptor-no-unknown": null,
     "at-rule-descriptor-value-no-unknown": null,
     "at-rule-disallowed-list": [
@@ -198,9 +199,6 @@ exports[`Scss rules matches snapshots 1`] = `
     "declaration-block-no-redundant-longhand-properties": null,
     "declaration-block-no-shorthand-property-overrides": [
       true,
-    ],
-    "declaration-block-single-line-max-declarations": [
-      0,
     ],
     "declaration-empty-line-before": null,
     "declaration-no-important": [
@@ -335,6 +333,11 @@ exports[`Scss rules matches snapshots 1`] = `
     "no-invalid-position-at-import-rule": null,
     "no-invalid-position-declaration": [
       true,
+      {
+        "ignoreAtRules": [
+          "mixin",
+        ],
+      },
     ],
     "no-irregular-whitespace": [
       true,
@@ -488,6 +491,10 @@ exports[`Scss rules matches snapshots 1`] = `
     "selector-max-id": [
       0,
     ],
+    "selector-no-deprecated": [
+      true,
+    ],
+    "selector-no-invalid": null,
     "selector-no-qualifying-type": [
       true,
       {
@@ -496,6 +503,7 @@ exports[`Scss rules matches snapshots 1`] = `
         ],
       },
     ],
+    "selector-no-unmatchable": null,
     "selector-no-vendor-prefix": null,
     "selector-not-notation": [
       "simple",
@@ -535,6 +543,7 @@ exports[`Scss rules matches snapshots 1`] = `
     "value-keyword-case": [
       "lower",
     ],
+    "value-no-invalid": null,
     "value-no-vendor-prefix": null,
   },
 }
