@@ -48,7 +48,7 @@ To lint SCSS you can add the following property to your package.json:
 
 ```json
 "stylelint": {
-  "extends": "stylelint-config-gds/scss"
+  "extends": "stylelint-config-gds/scss.js"
 }
 ```
 
@@ -56,7 +56,7 @@ To lint CSS add the following:
 
 ```json
 "stylelint": {
-  "extends": "stylelint-config-gds/css"
+  "extends": "stylelint-config-gds/css.js"
 }
 ```
 
